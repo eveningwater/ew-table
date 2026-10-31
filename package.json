@@ -1,0 +1,58 @@
+{
+  "name": "ew-table",
+  "version": "0.0.1",
+  "description": "基于 Vue 3 + Element Plus 的配置化表格组件",
+  "type": "module",
+  "files": [
+    "dist",
+    "llms.txt"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "keywords": [
+    "vue",
+    "vue3",
+    "element-plus",
+    "table",
+    "ew-table"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "vue-tsc --noEmit",
+    "dev:example": "vite --config examples/vite.config.ts",
+    "build:example": "vite build --config examples/vite.config.ts"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.4.0",
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.2.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "@vue/test-utils": "^2.4.6",
+    "element-plus": "^2.14.6",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^2.1.9",
+    "vue": "^3.4.31",
+    "vue-tsc": "^2.0.26"
+  }
+}
