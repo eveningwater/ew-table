@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { h } from 'vue'
 import { ElTag } from 'element-plus'
-import EwTable from 'ew-table'
-import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps, TableColumnScope } from 'ew-element-plus-table'
 
 const data = [
   { id: 1, name: '有机青菜', price: 6.5, stock: 30, status: '在售' },

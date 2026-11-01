@@ -19,7 +19,7 @@
     "types": ["vitest/globals", "node"],
     "baseUrl": ".",
     "paths": {
-      "ew-table": ["src/index.ts"]
+      "ew-element-plus-table": ["src/index.ts"]
     }
   },
   "include": [

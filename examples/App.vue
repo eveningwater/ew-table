@@ -55,7 +55,7 @@ const demos = [
 
 <template>
   <header class="page-head">
-    <h1>ew-table 示例</h1>
+    <h1>ew-element-plus-table 示例</h1>
     <p class="example-muted">基于 Vue 3 + Element Plus 的配置化表格组件</p>
   </header>
 

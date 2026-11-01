@@ -1,4 +1,4 @@
-# ew-table
+# ew-element-plus-table
 
 中文文档 | [English](./README.en.md) | [llms.txt](./llms.txt)
 
@@ -14,11 +14,11 @@
 ## 安装
 
 ```bash
-pnpm add ew-table
+pnpm add ew-element-plus-table
 # 或
-npm install ew-table
+npm install ew-element-plus-table
 # 或
-yarn add ew-table
+yarn add ew-element-plus-table
 ```
 
 `vue` 与 `element-plus` 作为 peerDependencies 不会被打进产物，需要宿主项目自行安装：
@@ -52,8 +52,8 @@ createApp(App).use(ElementPlus).mount('#app')
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: '姓名', width: 120 },
@@ -136,8 +136,8 @@ const columns: ElTableColumnProps[] = [
 <script setup lang="ts">
 import { h } from 'vue'
 import { ElTag } from 'element-plus'
-import EwTable from 'ew-table'
-import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps, TableColumnScope } from 'ew-element-plus-table'
 
 const data = [
   { id: 1, name: '有机青菜', price: 6.5, status: '在售' },
@@ -172,8 +172,8 @@ const columns: ElTableColumnProps[] = [
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: '姓名' },
@@ -209,8 +209,8 @@ const data = [
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: '姓名' },
@@ -289,8 +289,8 @@ const columns: ElTableColumnProps[] = [
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 interface TableExposedMethods {
   clearSelection: () => void
@@ -328,8 +328,8 @@ const sortByAge = () => tableRef.value?.sort('age', 'descending')
 ## 导出内容
 
 ```ts
-import EwTable, { EwTable as NamedEwTable } from 'ew-table'
-import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
+import EwTable, { EwTable as NamedEwTable } from 'ew-element-plus-table'
+import type { ElTableColumnProps, TableColumnScope } from 'ew-element-plus-table'
 ```
 
 | 导出 | 类型 | 说明 |
@@ -342,11 +342,11 @@ import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
 
 仓库根目录提供了遵循 [llmstxt.org](https://llmstxt.org/) 约定的 [llms.txt](./llms.txt)，用精简的 Markdown 汇总包信息、安装方式、API 摘要与参考链接，随 npm 包一起分发，便于 AI 助手（Codex、Claude Code、Cursor、Copilot 等）直接读取，减少凭空猜测 API 的情况。
 
-- 本地或 `node_modules/ew-table/llms.txt` 中均可直接读取
+- 本地或 `node_modules/ew-element-plus-table/llms.txt` 中均可直接读取
 - 也可作为上下文投喂给 AI：
 
 ```text
-请阅读 ew-table 的 llms.txt（https://github.com/eveningwater/ew-table/blob/main/llms.txt）后再编写示例代码，不要臆造未在文档中出现的属性。
+请阅读 ew-element-plus-table 的 llms.txt（https://github.com/eveningwater/ew-table/blob/main/llms.txt）后再编写示例代码，不要臆造未在文档中出现的属性。
 ```
 
 > 文档以纯 Markdown 编写，中英文各一份（[README.md](./README.md) / [README.en.md](./README.en.md)），未引入生成式文档站点，AI 可零依赖解析全部内容。

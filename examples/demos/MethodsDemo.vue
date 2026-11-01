@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { ElMessage } from 'element-plus'
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 interface TableExposedMethods {
   clearSelection: () => void

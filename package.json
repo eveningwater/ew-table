@@ -1,5 +1,5 @@
 {
-  "name": "ew-table",
+  "name": "ew-element-plus-table",
   "version": "0.0.1",
   "description": "基于 Vue 3 + Element Plus 的配置化表格组件",
   "type": "module",

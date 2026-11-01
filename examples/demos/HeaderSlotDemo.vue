@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const data = [
   { id: 1, name: '张三', score: 92, level: 'A' },

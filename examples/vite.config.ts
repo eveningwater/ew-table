@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
-      'ew-table': fileURLToPath(new URL('../src/index.ts', import.meta.url)),
+      'ew-element-plus-table': fileURLToPath(new URL('../src/index.ts', import.meta.url)),
     },
   },
   server: {

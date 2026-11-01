@@ -1,10 +1,10 @@
-# ew-table
+# ew-element-plus-table
 
-> ew-table 是基于 Vue 3 + Element Plus 的配置化表格组件：通过一份 `column` 配置完成列定义、单元格自定义渲染、作用域插槽、表头插槽与多级表头，并原样透传 `el-table` 的全部属性与实例方法。本文件遵循 [llms.txt](https://llmstxt.org/) 约定，供 AI 助手快速获取准确用法，避免臆造 API。
+> ew-element-plus-table 是基于 Vue 3 + Element Plus 的配置化表格组件：通过一份 `column` 配置完成列定义、单元格自定义渲染、作用域插槽、表头插槽与多级表头，并原样透传 `el-table` 的全部属性与实例方法。本文件遵循 [llms.txt](https://llmstxt.org/) 约定，供 AI 助手快速获取准确用法，避免臆造 API。
 
 ## 关键事实
 
-- 包名：`ew-table`，MIT 协议，默认导出 + 命名导出均为 `EwTable`
+- 包名：`ew-element-plus-table`，MIT 协议，默认导出 + 命名导出均为 `EwTable`
 - 运行要求（peerDependencies）：`vue ^3.3.0`、`element-plus ^2.4.0`，均不打包进产物
 - 只提供 1 个组件 `EwTable` 与 2 个类型：`ElTableColumnProps`、`TableColumnScope`
 - 内部依赖 Element Plus 的 `el-table` / `el-table-column`，宿主需全局注册 Element Plus
@@ -14,13 +14,13 @@
 ## 安装与最小示例
 
 ```bash
-pnpm add ew-table vue element-plus
+pnpm add ew-element-plus-table vue element-plus
 ```
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: '姓名', width: 120 },
@@ -70,8 +70,8 @@ const data = [{ id: 1, name: '张三', role: '店长' }]
 ### 导出
 
 ```ts
-import EwTable, { EwTable as NamedEwTable } from 'ew-table'
-import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
+import EwTable, { EwTable as NamedEwTable } from 'ew-element-plus-table'
+import type { ElTableColumnProps, TableColumnScope } from 'ew-element-plus-table'
 ```
 
 ## 参考链接

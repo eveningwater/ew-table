@@ -1,4 +1,4 @@
-# ew-table
+# ew-element-plus-table
 
 [中文文档](./README.md) | English | [llms.txt](./llms.txt)
 
@@ -14,11 +14,11 @@ A configuration-driven table component built on **Vue 3 + Element Plus**. With a
 ## Installation
 
 ```bash
-pnpm add ew-table
+pnpm add ew-element-plus-table
 # or
-npm install ew-table
+npm install ew-element-plus-table
 # or
-yarn add ew-table
+yarn add ew-element-plus-table
 ```
 
 `vue` and `element-plus` are declared as peerDependencies and are not bundled, so the host project must install them:
@@ -52,8 +52,8 @@ Then use it in your components:
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: 'Name', width: 120 },
@@ -136,8 +136,8 @@ The first argument of `render` is the cell value; the second is the full scope (
 <script setup lang="ts">
 import { h } from 'vue'
 import { ElTag } from 'element-plus'
-import EwTable from 'ew-table'
-import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps, TableColumnScope } from 'ew-element-plus-table'
 
 const data = [
   { id: 1, name: 'Organic Greens', price: 6.5, status: 'On Sale' },
@@ -172,8 +172,8 @@ Use `slotName` to reference a slot, and provide a slot with the same name on `Ew
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: 'Name' },
@@ -209,8 +209,8 @@ Use `headerSlot` to reference a header slot:
 
 ```vue
 <script setup lang="ts">
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 const columns: ElTableColumnProps[] = [
   { prop: 'name', label: 'Name' },
@@ -289,8 +289,8 @@ On `mounted`, the component attaches the main `el-table` methods to its own inst
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import EwTable from 'ew-table'
-import type { ElTableColumnProps } from 'ew-table'
+import EwTable from 'ew-element-plus-table'
+import type { ElTableColumnProps } from 'ew-element-plus-table'
 
 interface TableExposedMethods {
   clearSelection: () => void
@@ -328,8 +328,8 @@ const sortByAge = () => tableRef.value?.sort('age', 'descending')
 ## Exports
 
 ```ts
-import EwTable, { EwTable as NamedEwTable } from 'ew-table'
-import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
+import EwTable, { EwTable as NamedEwTable } from 'ew-element-plus-table'
+import type { ElTableColumnProps, TableColumnScope } from 'ew-element-plus-table'
 ```
 
 | Export | Type | Description |
@@ -342,11 +342,11 @@ import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
 
 The repo root ships an [llms.txt](./llms.txt) following the [llmstxt.org](https://llmstxt.org/) convention — a condensed Markdown summary of package info, installation, API reference, and links. It is published with the npm package so AI assistants (Codex, Claude Code, Cursor, Copilot, etc.) can read it directly instead of guessing the API.
 
-- Readable locally or at `node_modules/ew-table/llms.txt`
+- Readable locally or at `node_modules/ew-element-plus-table/llms.txt`
 - Or feed it as context to an AI:
 
 ```text
-Read ew-table's llms.txt (https://github.com/eveningwater/ew-table/blob/main/llms.txt) before writing example code, and do not invent props that are not documented.
+Read ew-element-plus-table's llms.txt (https://github.com/eveningwater/ew-table/blob/main/llms.txt) before writing example code, and do not invent props that are not documented.
 ```
 
 > Docs are plain Markdown in both Chinese ([README.md](./README.md)) and English ([README.en.md](./README.en.md)); no generated docs site is involved, so AI can parse everything with zero dependencies.
