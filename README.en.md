@@ -346,7 +346,7 @@ The repo root ships an [llms.txt](./llms.txt) following the [llmstxt.org](https:
 - Or feed it as context to an AI:
 
 ```text
-Read ew-table's llms.txt (https://github.com/<repo>/blob/main/llms.txt) before writing example code, and do not invent props that are not documented.
+Read ew-table's llms.txt (https://github.com/eveningwater/ew-table/blob/main/llms.txt) before writing example code, and do not invent props that are not documented.
 ```
 
 > Docs are plain Markdown in both Chinese ([README.md](./README.md)) and English ([README.en.md](./README.en.md)); no generated docs site is involved, so AI can parse everything with zero dependencies.

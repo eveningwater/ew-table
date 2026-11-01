@@ -346,7 +346,7 @@ import type { ElTableColumnProps, TableColumnScope } from 'ew-table'
 - 也可作为上下文投喂给 AI：
 
 ```text
-请阅读 ew-table 的 llms.txt（https://github.com/<repo>/blob/main/llms.txt）后再编写示例代码，不要臆造未在文档中出现的属性。
+请阅读 ew-table 的 llms.txt（https://github.com/eveningwater/ew-table/blob/main/llms.txt）后再编写示例代码，不要臆造未在文档中出现的属性。
 ```
 
 > 文档以纯 Markdown 编写，中英文各一份（[README.md](./README.md) / [README.en.md](./README.en.md)），未引入生成式文档站点，AI 可零依赖解析全部内容。

@@ -26,6 +26,10 @@
     "ew-table"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eveningwater/ew-table.git"
+  },
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",
