@@ -31,6 +31,7 @@
     "url": "git+https://github.com/eveningwater/ew-table.git"
   },
   "scripts": {
+    "prepublishOnly": "pnpm build && pnpm test",
     "dev": "vite build --watch",
     "build": "vite build",
     "test": "vitest run",

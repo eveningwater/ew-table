@@ -1,21 +1,5 @@
-# ===== 密钥与凭据 =====
-config.php
-.ftp-credentials
-*.pem
-*.key
-
-# 部署脚本
-deploy.sh
-ftp-sync.sh
-
-# 本地密钥型环境文件
-.env.local
-.env.*.local
-
 # ===== 依赖与构建产物 =====
 node_modules/
-dist/
-build/
 release
 
 # ===== 其他 =====
